@@ -31,12 +31,19 @@ let swapped = false;
 // Swap Cards
 function swapCards(e) {
   if (swapped === false) {
-    card1.style.left = '64%';
-    card2.style.right = '64%';
+    if (window.matchMedia('(max-width: 980px)').matches) {
+      card1.style.top = '50vh';
+      card2.style.bottom = '50vh';
+    } else {
+      card1.style.left = '64%';
+      card2.style.right = '64%';
+    }
     swapped = true;
   } else {
-    card1.style.left = '0';
-    card2.style.right = '0';
+    card1.style.top = 0;
+    card1.style.left = 0;
+    card2.style.right = 0;
+    card2.style.bottom = 0;
     swapped = false;
   }
 
