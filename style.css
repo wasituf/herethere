@@ -137,17 +137,27 @@ body {
   }
 
   .card {
-    height: 240px;
-    width: 240px;
+    height: 25vh;
+    width: 25vh;
   }
 
-  #card-container .card-1 {
-    margin-bottom: 16rem;
+  #card-container {
+    top: 0;
   }
 
-  #play {
-    position: relative;
-    top: -30.5rem;
+  #card-container .card-2 {
+    top: 7.5vh;
+  }
+
+  #play a {
+    position: fixed;
+    bottom: -10vh;
+    left: 35vw;
+  }
+
+  #main-nav {
+    top: 0;
+    margin-bottom: 2rem;
   }
 }
 

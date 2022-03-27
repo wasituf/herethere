@@ -32,8 +32,8 @@ let swapped = false;
 function swapCards(e) {
   if (swapped === false) {
     if (window.matchMedia('(max-width: 980px)').matches) {
-      card1.style.top = '50vh';
-      card2.style.bottom = '50vh';
+      card1.style.top = '33vh';
+      card2.style.top = '-25vh';
     } else {
       card1.style.left = '64%';
       card2.style.right = '64%';
@@ -43,7 +43,7 @@ function swapCards(e) {
     card1.style.top = 0;
     card1.style.left = 0;
     card2.style.right = 0;
-    card2.style.bottom = 0;
+    card2.style.top = '7.5vh';
     swapped = false;
   }
 
